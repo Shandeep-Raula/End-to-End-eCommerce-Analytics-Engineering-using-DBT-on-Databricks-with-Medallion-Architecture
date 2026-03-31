@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: ecommerce_source
+    database: ecommerce
+    schema: source
+
+    tables:
+      - name: dim_customer
+        description: Customer dimension table
+
+      - name: dim_product
+        description: Product dimension table
+
+      - name: dim_store
+        description: Store dimension table
+
+      - name: fact_sales
+        description: Sales fact table containing transactions
+
+      - name: fact_returns
+        description: Returns fact table containing return records
+
+      - name: dim_date
+        description: Date dimension table for time-based analysis

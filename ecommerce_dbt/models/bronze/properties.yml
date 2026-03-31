@@ -1,0 +1,55 @@
+version: 2
+models:
+  - name: bronze_date #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: date_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_customer #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: customer_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_product #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: product_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_store #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: store_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_sales #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_returns #  Must match the filename of a model -- including case sensitivity.
+    config:
+      materialized: table
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
+          - unique

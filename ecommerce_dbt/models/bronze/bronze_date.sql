@@ -1,0 +1,1 @@
+select * from {{ source('ecommerce_source', 'dim_date') }}

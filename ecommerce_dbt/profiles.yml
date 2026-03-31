@@ -1,0 +1,11 @@
+ecommerce_dbt:
+  outputs:
+    dev:
+      catalog: ecommerce
+      host: 
+      http_path: 
+      schema: source
+      threads: 1
+      token: 
+      type: databricks
+  target: dev
