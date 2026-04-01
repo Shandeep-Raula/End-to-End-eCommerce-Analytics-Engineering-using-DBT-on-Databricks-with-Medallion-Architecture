@@ -44,7 +44,11 @@ models:
         tests:
           - not_null
           - unique
+      - name : gross_amount
+        data-tests:
+          - generic_non_negative
 
+          
   - name: bronze_returns #  Must match the filename of a model -- including case sensitivity.
     config:
       materialized: table

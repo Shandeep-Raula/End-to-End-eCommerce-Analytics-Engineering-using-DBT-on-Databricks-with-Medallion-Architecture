@@ -23,3 +23,5 @@ sources:
 
       - name: dim_date
         description: Date dimension table for time-based analysis
+      
+      - name : item

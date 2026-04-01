@@ -1,0 +1,56 @@
+version: 2
+
+seeds:
+  - name: lookup  # CSV file name without .csv
+    description: "Seed data for customer dimension"
+
+    config:
+      column_types:
+        customer_sk: int
+        customer_code: string
+        first_name: string
+        last_name: string
+        gender: string
+        email: string
+        phone: string
+        loyalty_tier: string
+        signup_date: date
+
+    columns:
+      - name: customer_sk
+        description: "Surrogate key for customer"
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_code
+        description: "Business key for customer"
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: "Customer first name"
+
+      - name: last_name
+        description: "Customer last name"
+
+      - name: gender
+        description: "Customer gender"
+
+      - name: email
+        description: "Customer email address"
+        tests:
+          - not_null
+          - unique
+
+      - name: phone
+        description: "Customer phone number"
+
+      - name: loyalty_tier
+        description: "Customer loyalty tier (Gold, Silver, Bronze)"
+
+      - name: signup_date
+        description: "Date when customer signed up"
+        tests:
+          - not_null

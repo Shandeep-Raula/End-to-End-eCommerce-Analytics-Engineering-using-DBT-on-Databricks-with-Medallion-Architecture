@@ -1,0 +1,6 @@
+customer_sk,customer_code,first_name,last_name,gender,email,phone,loyalty_tier,signup_date
+1,CUST001,John,Doe,Male,john.doe@email.com,9876543210,Gold,2023-01-15
+2,CUST002,Jane,Smith,Female,jane.smith@email.com,9123456780,Silver,2023-02-20
+3,CUST003,Rahul,Sharma,Male,rahul.sharma@email.com,9988776655,Bronze,2023-03-10
+4,CUST004,Priya,Patel,Female,priya.patel@email.com,9090909090,Gold,2023-04-05
+5,CUST005,Amit,Kumar,Male,amit.kumar@email.com,9812345678,Silver,2023-05-12
